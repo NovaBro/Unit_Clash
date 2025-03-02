@@ -57,7 +57,7 @@ def user_interface (
                     valid_input = True
                     print('WHAT')
 
-            valid_input = True if key == 'capture' and int(userInput) > 1 else False
+            valid_input = True if key == 'capture' and int(userInput) < 2 else False
             while(not valid_input and key == 'capture'):
                 userInput = input(prompts[key])
                 print('Choose a valid capture point.')

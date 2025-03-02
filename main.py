@@ -140,7 +140,7 @@ while running:
                     randint(0, len(eventsTable))]
             )
             seedPrompt = np.random.random()
-            print('INSIDE STORY TABLE:', storyTable)
+            # print('INSIDE STORY TABLE:', storyTable)
 
             prompt = f"Write a short description about the follow events in a video game. The description should be no longer than 5 sentences. Describe the events briefly.:\n{'\n'.join(storyTable)} + {seedPrompt}"
             
